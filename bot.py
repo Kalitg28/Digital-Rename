@@ -83,7 +83,7 @@ class DigitalRenameBot(Client):
         app = aiohttp.web.AppRunner(await web_server())
         await app.setup()
         bind_address = "0.0.0.0"
-        await aiohttp.web.TCPSite(app, bind_address, Config.PORT).start()
+        await aiohttp.web.TCPSite(app, bind_address, Config.PORT).start(8080)
         
         path = "plugins/*.py"
         files = glob.glob(path)
