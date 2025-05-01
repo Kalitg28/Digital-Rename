@@ -64,7 +64,7 @@ class Config(object):
         FORCE_SUB = os.environ.get("FORCE_SUB", "Indian_MV")
         
     # wes response configuration     
-    PORT = int(os.environ.get("PORT", "8000"))
+    PORT = int(os.environ.get("PORT", "8080"))
     BOT_UPTIME = time.time()
 
 class rkn(object):
