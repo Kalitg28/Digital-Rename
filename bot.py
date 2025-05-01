@@ -93,8 +93,8 @@ class DigitalRenameBot(Client):
                 plugin_name = patt.stem.replace(".py", "")
                 plugins_path = Path(f"plugins/{plugin_name}.py")
                 import_path = "plugins.{}".format(plugin_name)
-               # spec = importlib.util.spec_from_file_location(import_path, plugins_path)
-               # load = importlib.util.module_from_spec(spec)
+                spec = importlib.util.spec_from_file_location(import_path, plugins_path)
+                load = importlib.util.module_from_spec(spec)
                 spec.loader.exec_module(load)
                 sys.modules["plugins" + plugin_name] = load
                 print("Digital Botz Imported " + plugin_name)
