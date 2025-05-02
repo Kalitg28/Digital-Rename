@@ -80,10 +80,10 @@ class DigitalRenameBot(Client):
         self.uploadlimit = Config.UPLOAD_LIMIT_MODE
         self.log = logger
         
-        app = aiohttp.web.AppRunner(await web_server())
-        await app.setup()
-        bind_address = "0.0.0.0/0"
-        await aiohttp.web.TCPSite(app, bind_address, Config.PORT).start()
+       # app = aio http.web.AppRunner(await web_server())
+       # await app.setup()
+       # bind_address = "0.0.0.0/0"
+       # await aiohttp.web.TCPSite(app, bind_address, Config.PORT).start()
         
         path = "plugins/*.py"
         files = glob.glob(path)
