@@ -34,16 +34,16 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # digital_botz client config
-    API_ID = os.environ.get("API_ID", "")
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID = os.environ.get("API_ID", "27823209")
+    API_HASH = os.environ.get("API_HASH", "1d693fcf3bfea119ca1d9057b08a4495")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8128412738:AAGqale4qAs4Zd-_oPB0NMNVsv0u1ReN9_U") 
 
     # premium account string session required 😢 
-    STRING_SESSION = os.environ.get("STRING_SESSION", "")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "BQFYMBMAMRY_fvDPVz3HazTuTgIE2xSZ6HsqK_0E94B6htyMQS466gXfFAuqINBnT8ki2KZfL7xVAyLqxWIw92o8wu12z7KKul6yGpVNwu9paW0fdcoonWmDMn5CgZgUquLWWAq-H_vp02eQ515Gq5mEGJeuHWlInHBOjpfSO7-d5ClIuloVrrJUeLQXmrVC9_8HYiHbodK6mHgdXAXc3xtrLDzlzbV62LUEkMclv7GpLVI0DSgnAOZPOe3t_NnB3OlsGVGNK3gerNw7Fpiq8-k0IB9TLr6eO6_JehmFk5hPVxewd-onuYfrHqwm2jCp5fFcTtwO5WSzM25mGuxK5QlPMbg1tAAAAAGu1dluAA")
     
     # database config
     DB_NAME = os.environ.get("DB_NAME","Cluster0")     
-    DB_URL = os.environ.get("DB_URL","")
+    DB_URL = os.environ.get("DB_URL","mongodb+srv://rename4gbmv:rename4gbmv@cluster0.byymegh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     RKN_PIC = os.environ.get("RKN_PIC", "https://envs.sh/1y-.jpg")
